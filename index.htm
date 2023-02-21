@@ -12,7 +12,6 @@
 
 <body>
     <h1>Vue3 examples</h1>
-
     <div id="app">
         <p>String: {{name}}</p>
         <h2>Objects</h2>
@@ -56,10 +55,11 @@
 
         <h3>Event handling</h3>
         <span v-on:mouseover="updateCounter()">{{counter}}</span>&nbsp;
-        <span v-on:mouseover="updateCounter()" class="well">Update hot spot</span>
+        <span v-on:mouseover="updateCounter()" class="bg-warning">
+            Update hot spot
+        </span>
 
         <h3>Input handling</h3>
-
         <p>
             <input type="text" v-model.lazy="inputMessage" placeholder="Something to reverse">
             <button v-on:click="reverse()">Reverse</button>
@@ -68,20 +68,18 @@
 
         <p>
             <input type="number" v-model.number.lazy="myNumber" placeholder="Number">
-            <!--button v-on:click="next(myNumber)">Next number</button-->
+            <button v-on:click="next(myNumber)">Next number</button>
             <span>{{ next(myNumber) }}</span>
         </p>
 
         <input type="checkbox" id="checkbox" v-model="checked">
         <label for="checkbox">{{ checked }}</label>
-
         <p v-if="checked">
             <!-- conditional rendering -->
             <input v-model.lazy="anotherMessage" placeholder="Write a message">
             Message is: {{ anotherMessage }}
         </p>
     </div>
-
     <script src="js/index.js"></script>
 </body>
 

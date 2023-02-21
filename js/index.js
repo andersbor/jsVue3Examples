@@ -4,13 +4,18 @@ Vue.createApp({
             name: "Anders B",
             teacher: { name: "Michael H", age: 29 },
             weekdays: ["Monday", "Tuesday", "Wednesday"],
-            cars: [{ make: "Volvo", model: "Amazon" }, { make: "Audi", model: "A8" }, {make: "VW", model: "Polo"}],
+            cars: [
+                { make: "Volvo", model: "Amazon" },
+                { make: "Audi", model: "A8" },
+                { make: "VW", model: "Polo" }
+            ],
             counter: 0,
             myNumber: 0,
             inputMessage: "",
             outputMessage: "",
             checked: false,
-            anotherMessage: "Hello"
+            anotherMessage: "Hello",
+            myNumber: 0
         }
     },
     methods: {
