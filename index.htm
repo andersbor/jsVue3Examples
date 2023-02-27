@@ -67,7 +67,7 @@
         </p>
 
         <p>
-            <input type="number" v-model.number.lazy="myNumber" placeholder="Number">
+            <input type="number" v-model.number="myNumber" placeholder="Number">
             <button v-on:click="next(myNumber)">Next number</button>
             <span>{{ next(myNumber) }}</span>
         </p>
@@ -79,6 +79,7 @@
             <input v-model.lazy="anotherMessage" placeholder="Write a message">
             Message is: {{ anotherMessage }}
         </p>
+        <p v-else>Du har ikke checket den</p>
     </div>
     <script src="js/index.js"></script>
 </body>
