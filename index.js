@@ -2,7 +2,7 @@ Vue.createApp({
     data() {
         return {
             name: "Anders B",
-            teacher: { name: "Michael H", age: 29 },
+            book: { title: "JavaScript for students", price: 89 },
             weekdays: ["Monday", "Tuesday", "Wednesday"],
             cars: [
                 { make: "Volvo", model: "Amazon" },
