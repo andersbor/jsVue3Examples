@@ -18,7 +18,7 @@
         <p>Object full: {{book}}</p>
         <p>Object, properties: Title {{book.title}}, Price {{book.price}}</p>
         <ul>
-            <li v-for="(value, name) in book">
+            <li v-for="(value, name) in book"> <!-- iterating properties -->
                 {{ name }}: {{ value }}
             </li>
         </ul>
@@ -64,11 +64,11 @@
             <input type="text" v-model.lazy="inputMessage" placeholder="Something to reverse">
             <button v-on:click="reverse()">Reverse</button>
             {{outputMessage}}
-            <div>Proper function {{ reverseProperFunction(inputMessage) }}</div>
+        <div>Proper function {{ reverseProperFunction(inputMessage) }}</div>
         </p>
 
         <p>
-            <input type="number" v-model.number="myNumber" placeholder="Number">
+            <input type="number" v-model.number.lazy="myNumber" placeholder="Number">
             <button v-on:click="next(myNumber)">Next number</button>
             <span>{{ next(myNumber) }}</span>
         </p>
